@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: prod-stedi-sean
-          image: gcr.io/cubs-consulting/stedi # This image needs to refer to the NEW Artifact registry repositorry
+          image: us-docker.pkg.dev/cit262-team1-project/waheed-api/stedi-api # This image needs to refer to the NEW Artifact registry repositorry
           env:
             - name: REDIS_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: redis-secrets-sean
+                  name: redis-secrets-waheed
                   key: REDIS_PASS
             - name: REDIS_HOST
               value: "redis-stedi-sean"
