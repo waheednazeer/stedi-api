@@ -33,7 +33,7 @@ spec:
 # The image is a prebuilt file containing the operating system        
           image: us-docker.pkg.dev/cit262-team1-project/waheed-api/stedi-api:latest # IMAGE NEEDS TO BE ARTIFACT REGISTRY NEW REPOSITORY
           env:
-            - name: REDIS_PASSWORD
+            - name: REDIS_PASS
               valueFrom:
                 secretKeyRef:
                   name: redis-secrets-waheed
