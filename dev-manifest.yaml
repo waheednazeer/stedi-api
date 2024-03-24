@@ -49,7 +49,7 @@ spec:
             - name: TWILIO_AUTH_TOKEN
               valueFrom:
                 secretKeyRef:
-                  name: waheed-twilio-dev
+                  name: sean-twilio-dev
                   key: twilio_token
 # The ports is a list of tcp ports the pod listens on
           ports:
