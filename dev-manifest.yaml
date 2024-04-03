@@ -38,19 +38,7 @@ spec:
                 secretKeyRef:
                   name: redis-secrets-sean
                   key: REDIS_PASS
-            - name: REDIS_HOST
-              value: "redis-stedi-sean"
-            - name: REDIS_PORT
-              value: "6379"
-            - name: REDIS_DB
-              value: "0"
-            - name: KAFKA_BROKER
-              value: "localhost:9092"
-            - name: TWILIO_AUTH_TOKEN
-              valueFrom:
-                secretKeyRef:
-                  name: sean-twilio-dev
-                  key: twilio_token
+            
 # The ports is a list of tcp ports the pod listens on
           ports:
 # ContainerPort is a specific port the pod listens on
